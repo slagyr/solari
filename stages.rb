@@ -12,8 +12,8 @@
 stage "default" do
   default_scene "default_scene"
   title "Limelight"
-  location [200, 25]
-  size [800, 800]
+  location :center, :center
+  size [1024, 786]
 end
 
 stage "devtool" do

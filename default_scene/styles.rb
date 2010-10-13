@@ -7,9 +7,21 @@
 default_scene {
   background_color "#111"
   horizontal_alignment :center
-  vertical_alignment :center
+  vertical_alignment :top
   width "100%"
   height "100%"
+}
+
+head {
+  width "100%"
+  horizontal_alignment :center
+  vertical_alignment :center
+  bottom_margin 20
+}
+
+head_logo {
+  left_padding 20
+  right_padding 20
 }
 
 display {
@@ -17,11 +29,15 @@ display {
   font_size 30
   text_color :blue
   horizontal_alignment :center
-  bottom_margin 50
 }
 
 select_name_button {
-  width 200
+  width 100
+  height 100
+  background_image "images/departure.png"
+  hover {
+    background_image "images/departure_blue.png"
+  }
 }
 
 flapper {
@@ -52,4 +68,31 @@ gap {
   float :on
   x 0
   y 70
+}
+
+tail {
+  top_margin 30
+  vertical_alignment :center
+}
+
+tail_section {
+  width "33%"
+  left_padding 10
+  right_padding 10
+  horizontal_alignment :center
+  vertical_alignment :center
+}
+
+ad_section {
+  background_color :white
+  border_color :grey
+  border_width 2
+  rounded_corner_radius 5
+}
+
+ad_line {
+  width "100%"
+  padding 5
+  horizontal_alignment :center
+  vertical_alignment :center
 }

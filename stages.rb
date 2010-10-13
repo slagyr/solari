@@ -14,13 +14,15 @@ stage "default" do
   title "Limelight"
   location :center, :center
   size [1024, 786]
+  framed false
+  fullscreen true
 end
 
-stage "devtool" do
- default_scene "devtool"
- title "Dev Tool"
- location [0, 0]
- size [100, 100]
- background_color "transparent"
- framed false
-end
+#stage "devtool" do
+# default_scene "devtool"
+# title "Dev Tool"
+# location [0, 0]
+# size [100, 100]
+# background_color "transparent"
+# framed false
+#end

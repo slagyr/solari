@@ -12,7 +12,12 @@ default_scene {
   height "100%"
 }
 
-root {
-  text_color :white
-  font_size 18
+display {
+  width "100%"
+  font_size 30
+  text_color :blue
+}
+
+select_name_button {
+  width 200
 }

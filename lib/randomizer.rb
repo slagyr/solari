@@ -43,3 +43,5 @@ class Randomizer
     return name
   end
 end
+
+Randomizer.data_home = File.expand_path("~")

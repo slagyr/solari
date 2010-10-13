@@ -15,3 +15,12 @@ stage "default" do
   location [200, 25]
   size [800, 800]
 end
+
+stage "devtool" do
+ default_scene "devtool"
+ title "Dev Tool"
+ location [0, 0]
+ size [100, 100]
+ background_color "transparent"
+ framed false
+end

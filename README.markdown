@@ -8,8 +8,9 @@ It was used for [SCNA 2010](http://scna.softwarecraftsmanship.org/) book rafflin
 How to use
 ----------
 
-You'll need to following requirements:
+You'll need the following dependencies:
 
+* JRuby 1.5.1 or higher
 * [limelight executable](http://limelight.8thlight.com/main/download)
 * limelight gem
 
@@ -26,6 +27,13 @@ This file contains the list of all people participating in the raffle.
 
 This file contains the list of all people picked as a winner.
 
+### Run Program
+
+In the repo directory, type <code>limelight open .</code>
+
+The program runs full-screen.  To exit, press the appropriate shortcut keys to close application (e.g., Command + Q for Mac, Alt + F4 for Windows).
+
 Credits
 -------
+
 [mab](http://www.freesound.org/usersViewSingle.php?id=127220) for the Solari departure board sound byte (Creative Commons).

@@ -3,7 +3,7 @@ Introduction
 
 A raffling app based on the old [split-flap displays](http://en.wikipedia.org/wiki/Flap_display_board) (also known as [Solari departure boards](http://en.wikipedia.org/wiki/Solari_departure_board)).
 
-It was used for [SCNA 2010](http://scna.softwarecraftsmanship.org/) book raffling.
+It was used for [SCNA 2010](http://scna.softwarecraftsmanship.org/) book raffling and [RubyConf 2010](http://rubyconf.org/) giveaways.
 
 How to use
 ----------

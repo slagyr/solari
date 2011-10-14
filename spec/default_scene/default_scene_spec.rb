@@ -5,8 +5,8 @@ describe "Default Scene" do
   uses_limelight :scene => "default_scene", :hidden => true
 
   before do
-    @ramdomizer = mock("randomizer")
-    production.randomizer = @ramdomizer
+    @randomizer = mock("randomizer", :load_names => nil)
+    production.randomizer = @randomizer
   end
 
   it "has a display and a button" do
@@ -15,11 +15,11 @@ describe "Default Scene" do
   end
 
   it "displays randomized name when clicking button" do
-    @ramdomizer.should_receive(:select_name).and_return("Fred")
+    @randomizer.should_receive(:select_name).and_return("Fred Lee")
 
     scene.select_name_button.mouse_clicked nil
 
-    scene.display.selected_name.should == "Fred"
+    scene.display.selected_name.should == "Fred Lee"
   end
 
 end

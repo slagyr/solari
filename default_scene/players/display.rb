@@ -6,9 +6,7 @@ module Display
 
   def selected_name=(name)
     @selected_name = name
-    #self.text = name
     first_name, last_name = name.split(' ')
-puts "#{first_name} #{last_name}"
 
     first_name = SolariUtil.pad(first_name)
     last_name = SolariUtil.pad(last_name)

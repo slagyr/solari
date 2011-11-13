@@ -1,2 +1,4 @@
 .rvmrc
 .redcar
+*.iml
+test_dir/

@@ -1,0 +1,12 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    limelight (0.5.5-java)
+    rspec (1.3.2)
+
+PLATFORMS
+  java
+
+DEPENDENCIES
+  limelight
+  rspec (~> 1.3.2)

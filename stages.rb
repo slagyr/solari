@@ -2,11 +2,11 @@
 
 stage "default" do
   default_scene "default_scene"
-  title "Limelight"
+  title "Solari"
   location :center, :center
-  size [1024, 786]
+  size [1280, 800]
   framed false
-  fullscreen true
+  fullscreen false
 end
 
 #stage "devtool" do

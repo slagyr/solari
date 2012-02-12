@@ -1,8 +1,11 @@
 module SolariUtil
+  def self.max
+    11
+  end
+
   def self.pad name
-    max = 10
-    return name[0...max] if name.size > max
-    padding = (max - name.size) / 2
-    return (" " * (max - name.size - padding)) + name + (" " * padding) 
+    return name[0...self.max] if name.size > self.max
+    padding = (self.max - name.size) / 2
+    return (" " * (self.max - name.size - padding)) + name + (" " * padding)
   end
 end

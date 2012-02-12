@@ -1,0 +1,9 @@
+production:
+  names_list_path: "<%= File.join(File.dirname(__FILE__), 'data') %>"
+  persist_used_names: false
+  play_sound: true
+
+test:
+  names_list_path: "<%= File.join(File.dirname(__FILE__), 'test_dir') %>"
+  persist_used_names: false
+  play_sound: false

@@ -5,7 +5,7 @@
 # For a complete listing of style attributes see: http://limelightwiki.8thlight.com/index.php/Style_Attributes
 
 default_scene {
-  background_color "#111"
+  background_color "#2C2C2C"
   horizontal_alignment :center
   vertical_alignment :top
   width "100%"
@@ -16,7 +16,7 @@ head {
   width "100%"
   horizontal_alignment :center
   vertical_alignment :center
-  bottom_margin 20
+  top_margin 10
 }
 
 head_logo {
@@ -25,6 +25,7 @@ head_logo {
 }
 
 display {
+  top_margin 90
   width "100%"
   font_size 30
   text_color :blue
@@ -71,12 +72,11 @@ gap {
 }
 
 tail {
-  top_margin 30
+  top_margin 50
   vertical_alignment :center
 }
 
 tail_section {
-  width "33%"
   left_padding 10
   right_padding 10
   horizontal_alignment :center

@@ -3,15 +3,11 @@
 # You may define serveral hooks and initialization steps here.
 
 module Production
-
+  attr_reader :config
   attr_writer :randomizer
 
   def randomizer
-    if @randomizer == nil
-      @randomizer = Randomizer.new
-      @randomizer.load_names
-    end
-    return @randomizer
+    @randomizer ||= Randomizer.new(@config["names_list_path"], @config["persist_used_names"])
   end
 
 #  # Define this method if you want the production name to be different from the default, directory name.
@@ -32,6 +28,15 @@ module Production
   def production_opening
     $: << File.expand_path(File.dirname(__FILE__) + "/lib")
     require 'randomizer'
+    require 'yaml'
+    require 'erb'
+    load_config
+  end
+
+  def load_config
+    config_yml = File.read(File.expand_path(File.dirname(__FILE__) + "/config/solari.yml"))
+    env = ENV["SOLARI_ENV"] || "production"
+    @config = YAML::load(ERB.new(config_yml).result)[env]
   end
 #
   # Hook #2.  Called after internal gems have been loaded and stages have been instantiated, yet before

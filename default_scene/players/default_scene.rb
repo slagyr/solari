@@ -4,5 +4,4 @@ module DefaultScene
   def scene_opened(e)
     production.randomizer.load_names
   end
-
 end

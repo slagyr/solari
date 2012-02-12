@@ -1,7 +1,6 @@
 require File.expand_path(File.dirname(__FILE__) + "/../spec_helper")
 
 describe "Default Scene" do
-
   uses_limelight :scene => "default_scene", :hidden => true
 
   before do
@@ -15,11 +14,11 @@ describe "Default Scene" do
   end
 
   it "displays randomized name when clicking button" do
+    production.production_opening
     @randomizer.should_receive(:select_name).and_return("Fred Lee")
 
     scene.select_name_button.mouse_clicked nil
 
     scene.display.selected_name.should == "Fred Lee"
   end
-
 end

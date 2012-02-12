@@ -2,3 +2,6 @@
 .redcar
 *.iml
 test_dir/
+*.sw[op]
+data/solari.all
+data/solari.used

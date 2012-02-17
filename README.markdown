@@ -11,7 +11,7 @@ How to use
 You will need the following dependencies:
 
 * JRuby 1.5.1 or higher
-* [limelight executable](http://limelight.8thlight.com/main/download)
+* [limelight executable](http://limelight.8thlight.com/download)
 * limelight gem
 
 ### solari.yml

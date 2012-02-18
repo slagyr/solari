@@ -36,6 +36,11 @@ In the repo directory, type <code>limelight open .</code>
 
 To exit, press the appropriate shortcut keys to close application (e.g., Command + Q for Mac, Alt + F4 for Windows).
 
+Contributors
+------------
+@cdemyanovich
+
+
 Credits
 -------
 

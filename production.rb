@@ -7,7 +7,7 @@ module Production
   attr_writer :randomizer
 
   def randomizer
-    @randomizer ||= Randomizer.new(@config["names_list_path"], @config["persist_used_names"])
+    @randomizer ||= Randomizer.new(FilesystemNameRepository.new(@config["names_list_path"]), @config["persist_used_names"])
   end
 
 #  # Define this method if you want the production name to be different from the default, directory name.
@@ -27,6 +27,7 @@ module Production
 #  # This is a good place to require needed files and instantiate objects in the business layer.
   def production_opening
     $: << File.expand_path(File.dirname(__FILE__) + "/lib")
+    require 'filesystem_name_repository'
     require 'randomizer'
     require 'yaml'
     require 'erb'

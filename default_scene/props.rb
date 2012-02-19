@@ -1,10 +1,12 @@
+require 'solari_util'
+
 head do
   head_logo :image => "images/8L-Logo.png", :players => "image"
 end
 display :id => "display" do
   2.times do |row|
     line :id => "line_#{row}" do
-      11.times do |col|
+      SolariUtil.max.times do |col|
         flapper :id => "flapper_#{row}_#{col}", :text => " "
       end
       gap

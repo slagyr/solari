@@ -11,7 +11,7 @@ module Flapper
   def flap
     return if (Java::java.lang.System.currentTimeMillis - $last_flap_time < 50)
     $last_flap_time = Java::java.lang.System.currentTimeMillis
-    play_sound('sounds/solari_sound.au') if production.config["play_sound"]
+    play_flap_sound
   end
 
   def show(value)
@@ -31,5 +31,11 @@ module Flapper
       end
     end
     @animation
+  end
+
+  private
+
+  def play_flap_sound
+    play_sound('sounds/solari_sound.au') if production.config["play_sound"]
   end
 end

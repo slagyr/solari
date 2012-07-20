@@ -5,7 +5,7 @@ describe "Default Scene" do
 
   before do
     @randomizer = mock("randomizer", :load_names => nil)
-    production.randomizer = @randomizer
+    production.stub(:randomizer => @randomizer)
   end
 
   it "has a display and a button" do

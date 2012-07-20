@@ -16,15 +16,14 @@ You will need the following dependencies:
 
 ### solari.yml
 
-This config file has three options:
+This config file has four options:
 
-1. `names_list_path` is the path where the `solari.all` and `solari.used` files live.  By default it points to the project's data directory.
-2. `persist_used_names` takes a boolean value.  If set to true, all people picked as winners will be stored in this file and will persist across multiple Solari sessions.  If set to false, it will only persist in a single Solari session.
-3. `play_sound` take a boolean value.  If set to true, it will play the Solari departure board sound.
+1. `names_list_path` is the path where the `names_list` file lives.
+1. `names_list` is the name of the file that contains the list of names.
+1. `persist_used_names` takes a boolean value.  If set to true, all people picked as winners will be stored in this file and will persist across multiple Solari sessions.  If set to false, it will only persist in a single Solari session.
+1. `play_sound` take a boolean value.  If set to true, it will play the Solari departure board sound.
 
-### solari.all
-
-Create this file if it does not already exist and add all the people participating in the raffle.
+Add all the people participating in the raffle in the `names_list` file.
 
 ### solari.used
 

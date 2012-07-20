@@ -3,7 +3,7 @@ require "filesystem_name_repository"
 
 describe FilesystemNameRepository do
   let(:test_dir)   { File.dirname(__FILE__) + "/../test_dir" }
-  let(:repository) { FilesystemNameRepository.new(test_dir) }
+  let(:repository) { FilesystemNameRepository.new(test_dir, 'solari.all') }
 
   def seed_names_to_file(names, filename)
     File.open(File.join(test_dir, filename), 'w')  { |f| names.each { |name| f.puts name } }
@@ -11,6 +11,11 @@ describe FilesystemNameRepository do
 
   before(:all) do
     Dir.mkdir(test_dir) unless File.exists?(test_dir)
+  end
+
+  it 'defaults names list if not provided' do
+    repository = FilesystemNameRepository.new(test_dir, nil)
+    repository.names_list.should_not be_nil
   end
 
   context 'with empty files' do

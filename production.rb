@@ -4,10 +4,10 @@
 
 module Production
   attr_reader :config
-  attr_writer :randomizer
 
   def randomizer
-    @randomizer ||= Randomizer.new(FilesystemNameRepository.new(@config["names_list_path"]), @config["persist_used_names"])
+    filesystem_name_repo = FilesystemNameRepository.new(@config['names_list_path'], @config['names_list'])
+    @randomizer ||= Randomizer.new(filesystem_name_repo, @config['persist_used_names'])
   end
 
 #  # Define this method if you want the production name to be different from the default, directory name.

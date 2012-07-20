@@ -1,8 +1,11 @@
 require 'fileutils'
 
 class FilesystemNameRepository
-  def initialize(data_home)
+  attr_reader :names_list
+
+  def initialize(data_home, names_list)
     @data_home = data_home
+    @names_list = names_list || 'solari.all'
   end
 
   def all
@@ -20,7 +23,7 @@ class FilesystemNameRepository
   private
 
   def names_file
-    file = File.join(@data_home, "solari.all")
+    file = File.join(@data_home, @names_list)
     create_unless_exists(file)
     file
   end

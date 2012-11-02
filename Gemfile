@@ -1,4 +1,4 @@
 source 'http://rubygems.org'
 
-gem 'limelight'
-gem 'rspec', '~> 1.3.2'
+gem 'limelight', '0.5.5'
+gem 'rspec', '1.3.2'

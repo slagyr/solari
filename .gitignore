@@ -4,3 +4,4 @@
 test_dir/
 *.sw[op]
 data/
+config/solari.yml

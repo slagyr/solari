@@ -1,5 +1,6 @@
 production:
   names_list_path: "<%= File.join(File.dirname(__FILE__), 'data') %>"
+  names_list: ''
   persist_used_names: false
   play_sound: true
 

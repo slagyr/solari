@@ -10,11 +10,13 @@ How to use
 
 You will need the following dependencies:
 
-* JRuby 1.5.1 or higher
-* [limelight executable](http://limelight.8thlight.com/download)
-* limelight gem
+* JRuby 1.6.8
+* [limelight 0.5.5 executable](http://limelight.8thlight.com/download)
+* limelight 0.5.5 gem
 
 ### solari.yml
+
+Copy `solari.yml.example` as `solari.yml`
 
 This config file has four options:
 
@@ -31,7 +33,7 @@ This file contains the list of all people picked as a winner (if the config opti
 
 ### Run Program
 
-In the repo directory, type <code>limelight open .</code>
+In the root of the project, type <code>limelight open .</code>
 
 To exit, press the appropriate shortcut keys to close application (e.g., Command + Q for Mac, Alt + F4 for Windows).
 

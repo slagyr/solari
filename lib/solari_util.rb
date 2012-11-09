@@ -1,6 +1,6 @@
 module SolariUtil
   def self.max
-    13
+    11
   end
 
   def self.pad name

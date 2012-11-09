@@ -4,8 +4,9 @@ stage "default" do
   default_scene "default_scene"
   title "Solari"
   location :center, :center
+  size [1280, 800]
   framed false
-  fullscreen true
+  fullscreen false
 end
 
 #stage "devtool" do

@@ -1,7 +1,7 @@
 require 'solari_util'
 
 head do
-  head_logo :image => "images/8L-Logo.png", :players => "image"
+  head_logo :image => "images/CleanCoders_LOGO_and_tagline.png", :players => "image"
 end
 display :id => "display" do
   2.times do |row|

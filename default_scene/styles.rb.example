@@ -82,17 +82,3 @@ tail_section {
   horizontal_alignment :center
   vertical_alignment :center
 }
-
-ad_section {
-  background_color :white
-  border_color :grey
-  border_width 2
-  rounded_corner_radius 5
-}
-
-ad_line {
-  width "100%"
-  padding 5
-  horizontal_alignment :center
-  vertical_alignment :center
-}

@@ -1,7 +1,7 @@
 .rvmrc
-.redcar
+*.sw[op]
 *.iml
 test_dir/
-*.sw[op]
 data/
 config/solari.yml
+default_scene/styles.rb

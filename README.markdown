@@ -5,7 +5,7 @@ A raffling app based on the old [split-flap displays](http://en.wikipedia.org/wi
 
 It was used for [SCNA 2010](http://scna.softwarecraftsmanship.org/) book raffling and [RubyConf 2010](http://rubyconf.org/) giveaways.
 
-How to use
+Dependencies
 ----------
 
 You will need the following dependencies:
@@ -14,9 +14,13 @@ You will need the following dependencies:
 * [limelight 0.5.5 executable](http://limelight.8thlight.com/download)
 * limelight 0.5.5 gem
 
-### solari.yml
+Setup
+-----
 
-Copy `solari.yml.example` as `solari.yml`
+* Copy `default_scene/styles.rb.example` as `default_scene/styles.rb`
+* Copy `solari.yml.example` as `solari.yml`
+
+### solari.yml
 
 This config file has four options:
 
@@ -29,11 +33,11 @@ Add all the people participating in the raffle in the `names_list` file.
 
 ### solari.used
 
-This file contains the list of all people picked as a winner (if the config option is turned on, see above)
+This file contains the list of all people picked as a winner (if the `persist_used_names` option is turned on, see above)
 
 ### Run Program
 
-In the root of the project, type <code>limelight open .</code>
+In the root of the project, type <code>bin/solari</code>
 
 To exit, press the appropriate shortcut keys to close application (e.g., Command + Q for Mac, Alt + F4 for Windows).
 
